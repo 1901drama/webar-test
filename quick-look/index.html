@@ -9,13 +9,12 @@
     <body>
         <a id="ar-model" 
            rel="ar" 
-           href="apple.usdz#callToAction=購入ページへ&checkoutTitle=The Apple&checkoutSubtitle=Red Color&price=1,100円">
+           href="apple.usdz#
+                 callToAction=購入ページへ&
+                 checkoutTitle=The Apple&
+                 checkoutSubtitle=Red Color&
+                 price=1,100円">
         </a>
-        <script>
-            document.querySelector('ar-model').addEventListener('load', (event) => {
-            event.target.activateAR();
-            });
-        </script>
         <script>
           const linkElement = document.getElementById("ar-model");
           linkElement.addEventListener("message", function (event) {   
