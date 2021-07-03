@@ -14,19 +14,20 @@
 			price=1,100円">
 			<img src="apple.png">
 		</a>
+		
 	</div>
 	<script>
 		document.querySelector('a').addEventListener('load', (event) => {
-		event.target.activateAR();
+			event.target.activateAR();
 		});
+		
 	</script>
 	<script>
-		const linkElement = document.getElementById("a");
-		inkElement.addEventListener("message", function (event) {   
+		document.querySelector('a').addEventListener("message", function (event) {   
 			if (event.data == "_apple_ar_quicklook_button_tapped") {
 				alert("購入ページへ遷移します");
 			}
 	        }, false);
+		
 	</script>
-
 </html>
