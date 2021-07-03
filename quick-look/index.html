@@ -1,19 +1,24 @@
 <div>
-        <a id="ar-model"
-           rel="ar" 
-           href="apple.usdz#
-                 callToAction=購入ページへ&
-                 checkoutTitle=The Apple&
-                 checkoutSubtitle=Red Color&
-                 price=1,100円">
-                <img src="apple.png">
-        </a>
+	<a id="ar-model"
+		rel="ar" 
+		href="apple.usdz#
+		callToAction=購入ページへ&
+		checkoutTitle=The Apple&
+		checkoutSubtitle=Red Color&
+		price=1,100円">
+		<img src="apple.png">
+	</a>
 </div>
 <script>
-          const linkElement = document.getElementById("ar-model");
-          linkElement.addEventListener("message", function (event) {   
-            if (event.data == "_apple_ar_quicklook_button_tapped") {
-              alert("購入ページへ遷移します");
-            }
-          }, false);
+	document.querySelector('ar-model').addEventListener('load', (event) => {
+	event.target.activateAR();
+	});
+</script>
+<script>
+	const linkElement = document.getElementById("ar-model");
+	inkElement.addEventListener("message", function (event) {   
+		if (event.data == "_apple_ar_quicklook_button_tapped") {
+			alert("購入ページへ遷移します");
+		}
+        }, false);
 </script>
