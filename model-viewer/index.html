@@ -9,22 +9,22 @@
   <body>
     <script type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"> 
+      
     </script>
     
     <model-viewer
-      id="ar-model"
       alt="apple"
       src="apple.glb" 
       ios-src="apple.usdz#callToAction=購入ページへ&checkoutTitle=The Apple&checkoutSubtitle=Red Color&price=1,100円"
       quick-look-browsers="safari chrome"
-      ar
-    >
+      ar>
+      
     </model-viewer>
-    
     <script>
       document.querySelector('model-viewer').addEventListener('load', (event) => {
       event.target.activateAR();
       });
+      
     </script>
     <script>
       const linkElement = document.getElementById("ar-model");
@@ -33,7 +33,7 @@
           alert("購入ページへ遷移します");
         }
       }, false);
-    </script>
     
+    </script>
   </body>
 </html>
