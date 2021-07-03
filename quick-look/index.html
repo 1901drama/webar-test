@@ -1,4 +1,4 @@
-<div>
+<body>
         <a id="ar-model" 
            rel="ar" 
            href="apple.usdz#
@@ -7,12 +7,12 @@
                  checkoutSubtitle=Red Color&
                  price=1,100円">
         </a>
-        <script>
+</body>
+<script>
           const linkElement = document.getElementById("ar-model");
           linkElement.addEventListener("message", function (event) {   
             if (event.data == "_apple_ar_quicklook_button_tapped") {
               alert("購入ページへ遷移します");
             }
           }, false);
-        </script>
-<div>
+</script>
