@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <title>QuickLook-Test</title>
+    </head>
+
+    <body>
+        <script type="module"
+          src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"> 
+        </script>
+        <a id="ar-model" rel="ar" href="apple.usdz#callToAction=購入ページへ&checkoutTitle=The Apple&checkoutSubtitle=Red Color&price=1,100円">
+        </a>
+        <script>
+            document.querySelector('model-viewer').addEventListener('load', (event) => {
+            event.target.activateAR();
+            });
+        </script>
+        <script>
+          const linkElement = document.getElementById("ar-model");
+          linkElement.addEventListener("message", function (event) {   
+            if (event.data == "_apple_ar_quicklook_button_tapped") {
+              alert("購入ページへ遷移します");
+            }
+          }, false);
+        </script>
+    </body>
+
+</html>
