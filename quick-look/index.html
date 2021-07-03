@@ -1,24 +1,33 @@
-<div>
-	<a id="ar-model"
-		rel="ar" 
-		href="apple.usdz#
-		callToAction=購入ページへ&
-		checkoutTitle=The Apple&
-		checkoutSubtitle=Red Color&
-		price=1,100円">
-		<img src="apple.png">
-	</a>
-</div>
-<script>
-	document.querySelector('div').addEventListener('load', (event) => {
-	event.target.activateAR();
-	});
-</script>
-<script>
-	const linkElement = document.getElementById("ar-model");
-	inkElement.addEventListener("message", function (event) {   
-		if (event.data == "_apple_ar_quicklook_button_tapped") {
-			alert("購入ページへ遷移します");
-		}
-        }, false);
-</script>
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="index.css" type="text/css">
+		<title>ModelViewer-Test</title>
+	</head>
+	<div>
+		<a id="ar-model"
+			rel="ar" 
+			href="apple.usdz#
+			callToAction=購入ページへ&
+			checkoutTitle=The Apple&
+			checkoutSubtitle=Red Color&
+			price=1,100円">
+			<img src="apple.png">
+		</a>
+	</div>
+	<script>
+		document.querySelector('div').addEventListener('load', (event) => {
+		event.target.activateAR();
+		});
+	</script>
+	<script>
+		const linkElement = document.getElementById("ar-model");
+		inkElement.addEventListener("message", function (event) {   
+			if (event.data == "_apple_ar_quicklook_button_tapped") {
+				alert("購入ページへ遷移します");
+			}
+	        }, false);
+	</script>
+
+</html>
