@@ -15,14 +15,12 @@
       id="ar-model"
       alt="apple"
       src="apple.glb" 
-      ios-src="apple.usdz#
-               callToAction=購入ページへ&
-               checkoutTitle=The Apple&
-               checkoutSubtitle=Red Color&
-               price=1,100円"
+      ios-src="apple.usdz#callToAction=購入ページへ&checkoutTitle=The Apple&checkoutSubtitle=Red Color&price=1,100円"
       quick-look-browsers="safari chrome"
-      ar >
+      ar
+    >
     </model-viewer>
+    
     <script>
       document.querySelector('model-viewer').addEventListener('load', (event) => {
       event.target.activateAR();
@@ -36,6 +34,6 @@
         }
       }, false);
     </script>
+    
   </body>
-  
 </html>
