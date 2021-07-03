@@ -7,21 +7,22 @@
   </head>
   
   <body>
-  <script type="module"
+    <script type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"> 
-  </script>
-  <script>
-    document.querySelector('model-viewer').addEventListener('load', (event) => {
+    </script>
+    <script>
+      document.querySelector('model-viewer').addEventListener('load', (event) => {
       event.target.activateAR();
-    });
-  </script>
+      });
+    </script>
     
-  <model-viewer  
-    alt="apple"
-    src="apple.glb" 
-    ios-src="apple.usdz#callToAction=カートに入れる&checkoutTitle=プロ生ちゃん&checkoutSubtitle=USDZモデル&price=5,000兆円"
-    quick-look-browsers="safari chrome"
-    ar
-  </model-viewer>
+    <model-viewer  
+      alt="apple"
+      src="apple.glb" 
+      ios-src="apple.usdz#callToAction=カートに入れる&checkoutTitle=プロ生ちゃん&checkoutSubtitle=USDZモデル&price=5,000兆円"
+      quick-look-browsers="safari chrome"
+      ar
+    </model-viewer>
   </body>
+  
 </html>
