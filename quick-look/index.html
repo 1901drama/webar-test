@@ -13,7 +13,7 @@
 			checkoutTitle=The Apple&
 			checkoutSubtitle=Red Color&
 			price=1,100円">
-				<img />
+				<img src="apple.png">
 		</a>
 		
 	</div>
@@ -26,7 +26,7 @@
 	<script>
 		document.querySelector('a').addEventListener("message", function (event) {   
 			if (event.data == "_apple_ar_quicklook_button_tapped") {
-				alert("購入ページへ遷移します");
+				window.open('https://www.google.com/?hl=ja', '_blank');
 			}
 		}, false);
 		
